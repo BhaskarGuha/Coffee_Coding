@@ -34,7 +34,7 @@ console.log(value)
 
 const id = Symbol("245")
 const otherId = Symbol("245")
-comsole.log(id === otherId) //false . Symbols are unique values. if the string value is same, then also the symbols are different.
+console.log(id === otherId) //false . Symbols are unique values. if the string value is same, then also the symbols are different.
 Symbol.for("245") === Symbol.for("245") //true. Symbols are unique values. if the string value is same, then also the symbols are different.
 
 
@@ -57,3 +57,8 @@ function greet(name) {
     return "Hello, " + name + "!";
 }//function can also be assigned to a variable. let myFunction = function() { console.log("Hello!"); };
 console.log(greet("Alice")); // "Hello, Alice!"
+
+console.log(typeof fruits) // non-primitive data types are of type object. Function is also of type object.
+//typeof normally returns "object" for all non-primitive types.
+//Only functions return "function", even though they are technically objects.
+//This behavior exists to make it easier to detect functions in JavaScript.
