@@ -1,16 +1,37 @@
-# Using `"use strict";` in JavaScript (ES5)
+📌 use strict in JavaScript
+📖 What is use strict?
+use strict is a special directive in JavaScript that enables Strict Mode.
+It helps you write cleaner, safer code by catching common mistakes and preventing unsafe actions.
 
-**Strict mode** is a way to opt in to a restricted variant of JavaScript. It helps catch common coding mistakes and "unsafe" actions by throwing errors where JavaScript would normally fail silently.
+📦 Why Use It?
+Prevents accidental creation of global variables.
 
-## Why Use Strict Mode?
+Throws errors for bad syntax.
 
-- **Catches Common Errors:** For example, using undeclared variables throws an error.
-- **Prevents Unsafe Actions:** It disallows some features that are considered to be error-prone.
-- **Improves Code Quality:** Enforces better coding practices and can help optimize your code.
+Disallows usage of unsafe or deprecated features.
 
-## How to Enable Strict Mode
+Makes your code future-ready and more secure.
 
-To enable strict mode, add the following directive at the top of your script or function:
+📙 How to Use
+Add "use strict"; at the top of your JS file or inside a function:
 
-```javascript
 "use strict";
+let x = 5;
+console.log(x);  // ✅ Works fine
+If you forget to declare a variable:
+
+
+"use strict";
+x = 5;
+console.log(x);  // ❌ Error: x is not defined
+📌 Where to Apply
+At the beginning of your script
+
+Inside a specific function block
+
+function test() {
+  "use strict";
+  // Strict Mode active here
+}
+✅ Best Practice:
+Always use "use strict"; in new JavaScript projects for safer and more reliable code.
